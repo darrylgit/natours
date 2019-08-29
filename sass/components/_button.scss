@@ -36,6 +36,16 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+      transition: all 0.4s;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -58,6 +68,7 @@
   &:link,
   &:visited {
     font-size: $default-font-size;
+    font-weight: 700;
     color: $color-primary;
     display: inline-block;
     text-decoration: none;
