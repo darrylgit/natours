@@ -62,7 +62,9 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#section-tours" class="btn btn--white btn--animated">Discover Our Tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover Our Tours</a
+        >
       </div>
     </header>
 
@@ -98,6 +100,30 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+                src="img/nat-1-large.jpg"
+              />
+
+              <img
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+                src="img/nat-2-large.jpg"
+              />
+
+              <img
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+                src="img/nat-3-large.jpg"
+              />
+              <!--
+              <img
                 src="img/nat-1-large.jpg"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
@@ -112,6 +138,7 @@
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
               />
+              -->
             </div>
           </div>
         </div>
@@ -446,7 +473,20 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        <picture class="footer-logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="Full logo"
+            src="img/logo-green-2x.png"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -492,21 +532,31 @@
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
           <h3 class="heading-tertiary u-margin-bottom-small">
             Important &ndash; Please read these terms before booking
           </h3>
           <p class="popup__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Justo laoreet sit amet cursus. Donec et odio
-            pellentesque diam volutpat commodo. Cursus euismod quis viverra nibh cras. Eget mauris pharetra et ultrices neque
-            ornare. Amet purus gravida quis blandit. Tellus at urna condimentum mattis pellentesque id nibh tortor. Arcu non odio
-            euismod lacinia at. Lacus luctus accumsan tortor posuere ac ut consequat semper. At quis risus sed vulputate odio. In
-            massa tempor nec feugiat nisl. Eu feugiat pretium nibh ipsum consequat nisl. Consequat semper viverra nam libero justo.
-            Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Pretium lectus quam id leo in vitae turpis massa sed.
-            Mattis ullamcorper velit sed ullamcorper morbi tincidunt.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
+            aliquam vestibulum morbi blandit cursus risus at ultrices mi. Justo
+            laoreet sit amet cursus. Donec et odio pellentesque diam volutpat
+            commodo. Cursus euismod quis viverra nibh cras. Eget mauris pharetra
+            et ultrices neque ornare. Amet purus gravida quis blandit. Tellus at
+            urna condimentum mattis pellentesque id nibh tortor. Arcu non odio
+            euismod lacinia at. Lacus luctus accumsan tortor posuere ac ut
+            consequat semper. At quis risus sed vulputate odio. In massa tempor
+            nec feugiat nisl. Eu feugiat pretium nibh ipsum consequat nisl.
+            Consequat semper viverra nam libero justo. Mollis aliquam ut
+            porttitor leo a diam sollicitudin tempor id. Pretium lectus quam id
+            leo in vitae turpis massa sed. Mattis ullamcorper velit sed
+            ullamcorper morbi tincidunt.
           </p>
-          <a href="#section-tours" class="btn btn--green popup__btn">Book now</a>
+          <a href="#section-tours" class="btn btn--green popup__btn"
+            >Book now</a
+          >
         </div>
       </div>
     </div>
